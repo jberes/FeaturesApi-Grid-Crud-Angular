@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "features-api-grid-crud-angular": {
+    "tttfeatures-api-grid-crud-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/features-api-grid-crud-angular",
+            "outputPath": "dist/tttfeatures-api-grid-crud-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -74,10 +74,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "features-api-grid-crud-angular:build:production"
+              "browserTarget": "tttfeatures-api-grid-crud-angular:build:production"
             },
             "development": {
-              "browserTarget": "features-api-grid-crud-angular:build:development"
+              "browserTarget": "tttfeatures-api-grid-crud-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +85,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "features-api-grid-crud-angular:build"
+            "browserTarget": "tttfeatures-api-grid-crud-angular:build"
           }
         },
         "test": {
@@ -120,7 +120,7 @@
       }
     }
   },
-  "defaultProject": "features-api-grid-crud-angular",
+  "defaultProject": "tttfeatures-api-grid-crud-angular",
   "cli": {
     "schematicCollections": ["@angular-eslint/schematics"]
   }

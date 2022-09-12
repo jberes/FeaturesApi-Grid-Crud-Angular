@@ -3,19 +3,15 @@ import { BrowserModule, HammerModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { View1Component } from './view1/view1.component';
-import { IgxGridModule, IgxNavbarModule, IgxNavigationDrawerModule, IgxIconModule } from 'igniteui-angular';
+import { GridViewComponent } from './grid-view/grid-view.component';
+import { IgxGridModule, IgxActionStripModule, IgxNavbarModule, IgxNavigationDrawerModule, IgxIconModule } from 'igniteui-angular';
 import { FormsModule } from '@angular/forms';
-import { View2Component } from './view2/view2.component';
-import { View3Component } from './view3/view3.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    View1Component,
-    View2Component,
-    View3Component
+    GridViewComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +19,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     BrowserAnimationsModule,
     IgxGridModule,
+    IgxActionStripModule,
     FormsModule,
     IgxNavbarModule,
     IgxNavigationDrawerModule,

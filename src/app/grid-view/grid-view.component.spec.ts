@@ -3,23 +3,23 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-import { IgxGridModule } from 'igniteui-angular';
-import { View1Component } from './view1.component';
+import { IgxGridModule, IgxActionStripModule } from 'igniteui-angular';
+import { GridViewComponent } from './grid-view.component';
 
-describe('View1Component', () => {
-  let component: View1Component;
-  let fixture: ComponentFixture<View1Component>;
+describe('GridViewComponent', () => {
+  let component: GridViewComponent;
+  let fixture: ComponentFixture<GridViewComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ View1Component ],
-      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule ]
+      declarations: [ GridViewComponent ],
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule, IgxActionStripModule ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(View1Component);
+    fixture = TestBed.createComponent(GridViewComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -13,5 +13,8 @@
   <igx-column header="description" field="description" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="description"></igx-column>
   <igx-column header="requestorEmail" field="requestorEmail" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="requestorEmail"></igx-column>
   <igx-column header="dateAdded" field="dateAdded" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="dateAdded"></igx-column>
-  <igx-column header="product" field="product" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="product"></igx-column>
+  <igx-action-strip>
+    <igx-grid-pinning-actions></igx-grid-pinning-actions>
+    <igx-grid-editing-actions [addRow]="true"></igx-grid-editing-actions>
+  </igx-action-strip>
 </igx-grid>

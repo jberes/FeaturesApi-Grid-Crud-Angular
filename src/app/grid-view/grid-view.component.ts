@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { FeaturesService } from '../services/features.service';
 
 @Component({
-  selector: 'app-view1',
-  templateUrl: './view1.component.html',
-  styleUrls: ['./view1.component.scss']
+  selector: 'app-grid-view',
+  templateUrl: './grid-view.component.html',
+  styleUrls: ['./grid-view.component.scss']
 })
-export class View1Component implements OnInit {
+export class GridViewComponent implements OnInit {
   public featuresFeatures: any = null;
 
   constructor(
