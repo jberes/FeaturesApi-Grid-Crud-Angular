@@ -1,4 +1,11 @@
-<igx-grid [data]="featuresFeatures" primaryKey="featureId" displayDensity="cosy" rowSelection="multiple" [rowEditable]="true" [moving]="true" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+<igx-grid [data]="featuresFeatures" primaryKey="featureId" displayDensity="cosy" 
+    rowSelection="multiple" [rowEditable]="true" [moving]="true" [allowFiltering]="true" 
+    filterMode="excelStyleFilter" class="grid"
+    
+    (rowAdd)="rowAdd($event)"
+    (rowEditDone)="rowEdit($event)"
+    (rowDelete)="rowDelete($event)"
+    >
   <igx-grid-toolbar>
     <igx-grid-toolbar-actions>
       <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
@@ -15,3 +22,6 @@
   <igx-column header="dateAdded" field="dateAdded" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="dateAdded"></igx-column>
   <igx-column header="product" field="product" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="product"></igx-column>
 </igx-grid>
+<div>
+  <igx-snackbar #snackbar [outlet]="grid"></igx-snackbar>
+</div>
