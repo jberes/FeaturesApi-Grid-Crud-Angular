@@ -1,0 +1,17 @@
+<igx-grid [data]="featuresFeatures" primaryKey="featureId" displayDensity="cosy" rowSelection="multiple" [rowEditable]="true" [moving]="true" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
+  <igx-grid-toolbar>
+    <igx-grid-toolbar-actions>
+      <igx-grid-toolbar-pinning></igx-grid-toolbar-pinning>
+      <igx-grid-toolbar-hiding></igx-grid-toolbar-hiding>
+      <igx-grid-toolbar-exporter></igx-grid-toolbar-exporter>
+    </igx-grid-toolbar-actions>
+    <igx-grid-toolbar-title>Grid Toolbar</igx-grid-toolbar-title>
+  </igx-grid-toolbar>
+  <igx-column header="featureId" field="featureId" dataType="number" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="featureId"></igx-column>
+  <igx-column header="productId" field="productId" dataType="number" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="productId"></igx-column>
+  <igx-column header="title" field="title" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="title"></igx-column>
+  <igx-column header="description" field="description" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="description"></igx-column>
+  <igx-column header="requestorEmail" field="requestorEmail" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="requestorEmail"></igx-column>
+  <igx-column header="dateAdded" field="dateAdded" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="dateAdded"></igx-column>
+  <igx-column header="product" field="product" dataType="string" [sortable]="true" [resizable]="true" [groupable]="true" [editable]="true" [hasSummary]="true" title="product"></igx-column>
+</igx-grid>

@@ -1,0 +1,47 @@
+<igx-navbar class="navbar">
+  <igx-navbar-title>App Name</igx-navbar-title>
+</igx-navbar>
+<div class="row-layout group">
+  <igx-nav-drawer [pin]="true" [pinThreshold]="0" width="320px" class="nav-drawer">
+    <ng-template igxDrawerMini>
+      <div igxDrawerItem igxRipple routerLink="/view1">
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/view2">
+        <igx-icon class="icon">
+          assignment_turned_in
+        </igx-icon>
+      </div>
+      <div igxDrawerItem igxRipple routerLink="/view3">
+        <igx-icon class="icon">
+          assessment
+        </igx-icon>
+      </div>
+    </ng-template>
+    <ng-template igxDrawer>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          account_circle
+        </igx-icon>
+        <span>View 1</span>
+      </div>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          assignment_turned_in
+        </igx-icon>
+        <span>View 2</span>
+      </div>
+      <div igxDrawerItem igxRipple>
+        <igx-icon class="icon">
+          assessment
+        </igx-icon>
+        <span>View 3</span>
+      </div>
+    </ng-template>
+  </igx-nav-drawer>
+  <div class="view-container">
+    <router-outlet></router-outlet>
+  </div>
+</div>
